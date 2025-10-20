@@ -1,0 +1,46 @@
+{
+  "boardType": "IS-VP-CB",
+  "boardVersion": "V4",
+  "module": {
+    "chip": "ESP32",
+    "flash_size_mb": 4
+  },
+  "aliases": ["VPMB-V4-062024"],
+  "capabilities": {
+    "has_mlx90614": true,
+    "has_bme688": false,
+    "has_sht41": false,
+    "num_lm35_sensors": 0,
+    "has_ld2410_uart": false,
+    "has_ld2410_binary": true,
+    "num_heating_circuits": 2,
+    "num_lighting_circuits": 0,
+    "has_pairing_led": true,
+    "has_sensor_led": false,
+    "has_pairing_button": false,
+    "has_gnd_sw": false
+  },
+  "pinout": {
+    "pairing_button_gpio": null,
+    "gnd_sw_gpio": null,
+    "heater_relay_1": 18,
+    "heater_relay_2": 19,
+    "heater_relay_3": null,
+    "lights_relay_1": null,
+    "lights_relay_2": null,
+    "i2c_sda": 21,
+    "i2c_scl": 22,
+    "i2c_port": 0,
+    "mlx90614_addr": 90,
+    "bme688_addr": 0,
+    "sht41_addr": 0,
+    "ld2410_tx": null,
+    "ld2410_rx": null,
+    "ld2410_out": 23,
+    "ld2410_uart_port": 1,
+    "lm35_remote": null,
+    "lm35_main": null,
+    "pairing_led": 2,
+    "sensor_led": null
+  }
+}

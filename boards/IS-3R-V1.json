@@ -1,0 +1,45 @@
+{
+  "boardType": "IS-3R",
+  "boardVersion": "V1",
+  "module": {
+    "chip": "ESP32-C6",
+    "flash_size_mb": 8
+  },
+  "capabilities": {
+    "has_mlx90614": true,
+    "has_bme688": true,
+    "has_sht41": false,
+    "num_lm35_sensors": 0,
+    "has_ld2410_uart": true,
+    "has_ld2410_binary": true,
+    "num_heating_circuits": 3,
+    "num_lighting_circuits": 0,
+    "has_pairing_led": true,
+    "has_sensor_led": false,
+    "has_pairing_button": true,
+    "has_gnd_sw": true
+  },
+  "pinout": {
+    "pairing_button_gpio": 6,
+    "gnd_sw_gpio": 7,
+    "heater_relay_1": 18,
+    "heater_relay_2": 19,
+    "heater_relay_3": 20,
+    "lights_relay_1": null,
+    "lights_relay_2": null,
+    "i2c_sda": 21,
+    "i2c_scl": 22,
+    "i2c_port": 0,
+    "mlx90614_addr": 90,
+    "bme688_addr": 118,
+    "sht41_addr": 0,
+    "ld2410_tx": 2,
+    "ld2410_rx": 3,
+    "ld2410_out": 23,
+    "ld2410_uart_port": 1,
+    "lm35_remote": null,
+    "lm35_main": null,
+    "pairing_led": 11,
+    "sensor_led": null
+  }
+}

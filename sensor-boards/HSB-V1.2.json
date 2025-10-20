@@ -1,0 +1,19 @@
+{
+  "sku": "HSB-V1.2",
+  "name": "Halo Sensor Board V1.2",
+  "compatibleBoards": [
+    "IS-3R-V1",
+    "IS-3R-V2",
+    "IS-3R-WL-V3",
+    "IS-3R-WL-V5"
+  ],
+  "capabilities": {
+    "has_mlx90614": true,
+    "has_bme688": false,
+    "has_sht41": false,
+    "has_ld2410_uart": false,
+    "has_ld2410_binary": true,
+    "has_sensor_led": false,
+    "has_gnd_sw_mosfet": false
+  }
+}

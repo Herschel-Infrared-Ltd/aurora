@@ -1,0 +1,18 @@
+{
+  "sku": "VSB-V3",
+  "name": "VarioPower Sensor Board V3",
+  "compatibleBoards": [
+    "IS-VP-CB-V8",
+    "IS-1R-V2"
+  ],
+  "capabilities": {
+    "has_mlx90614": true,
+    "has_bme688": false,
+    "has_sht41": false,
+    "has_ld2410_uart": true,
+    "has_ld2410_binary": true,
+    "has_sensor_led": true,
+    "has_gnd_sw_mosfet": true,
+    "gnd_sw_gpio": 7
+  }
+}

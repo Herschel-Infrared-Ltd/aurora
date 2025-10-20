@@ -1,0 +1,606 @@
+{
+  "products": [
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-4800",
+      "variant": "4800W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 1600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-4800-L",
+      "variant": "4800W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 1600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-4800-D",
+      "variant": "4800W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 1600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-4800-D-L",
+      "variant": "4800W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 1600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-7800",
+      "variant": "7800W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 2600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-7800-L",
+      "variant": "7800W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 2600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-7800-D",
+      "variant": "7800W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 2600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-7800-D-L",
+      "variant": "7800W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 2600
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-9600",
+      "variant": "9600W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 3200
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-9600-L",
+      "variant": "9600W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 3200
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-9600-D",
+      "variant": "9600W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 3200
+      }
+    },
+    {
+      "productName": "Halo",
+      "sku": "IR-HALO-9600-D-L",
+      "variant": "9600W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 3200
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-3200",
+      "variant": "3200W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-3200-L",
+      "variant": "3200W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-3200-D",
+      "variant": "3200W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-3200-D-L",
+      "variant": "3200W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 1600,
+        "circuit2": 1600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-5200",
+      "variant": "5200W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-5200-L",
+      "variant": "5200W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-5200-D",
+      "variant": "5200W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-5200-D-L",
+      "variant": "5200W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 2600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-6400",
+      "variant": "6400W standard",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-6400-L",
+      "variant": "6400W with lights",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-6400-D",
+      "variant": "6400W with decor",
+      "compatibleBoards": [
+        "IS-3R-V1",
+        "IS-3R-V2",
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Halo Mini",
+      "sku": "IR-HALO-M-6400-D-L",
+      "variant": "6400W with lights & decor",
+      "compatibleBoards": [
+        "IS-3R-WL-V3",
+        "IS-3R-WL-V5"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 3200,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Horizon",
+      "sku": "IR-HORIZON-2600",
+      "variant": "2600W standard",
+      "compatibleBoards": [
+        "IS-1R-V2"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Horizon",
+      "sku": "IR-HORIZON-2600-D",
+      "variant": "2600W with decor",
+      "compatibleBoards": [
+        "IS-1R-V2"
+      ],
+      "heatingWattage": {
+        "circuit1": 2600,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Horizon",
+      "sku": "IR-HORIZON-3200",
+      "variant": "3200W standard",
+      "compatibleBoards": [
+        "IS-1R-V2"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Horizon",
+      "sku": "IR-HORIZON-3200-D",
+      "variant": "3200W with decor",
+      "compatibleBoards": [
+        "IS-1R-V2"
+      ],
+      "heatingWattage": {
+        "circuit1": 3200,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-215",
+      "variant": "215W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 215,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-420",
+      "variant": "420W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 420,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-600",
+      "variant": "600W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 600,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-850",
+      "variant": "850W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 850,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-850L",
+      "variant": "850W Long",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 850,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-1050",
+      "variant": "1050W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 1050,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-1200",
+      "variant": "1200W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 1200,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort",
+      "sku": "HC-1250L",
+      "variant": "1250W",
+      "compatibleBoards": [
+        "IS-1R-V2",
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 1250,
+        "circuit2": 0,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort VarioPower",
+      "sku": "HC-600-VP",
+      "variant": "600W",
+      "compatibleBoards": [
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 300,
+        "circuit2": 300,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort VarioPower",
+      "sku": "HC-850-VP",
+      "variant": "850W",
+      "compatibleBoards": [
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 350,
+        "circuit2": 500,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort VarioPower",
+      "sku": "HC-1050-VP",
+      "variant": "1050W",
+      "compatibleBoards": [
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 450,
+        "circuit2": 600,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort VarioPower",
+      "sku": "HC-1200-VP",
+      "variant": "1200W",
+      "compatibleBoards": [
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 500,
+        "circuit2": 700,
+        "circuit3": 0
+      }
+    },
+    {
+      "productName": "Comfort VarioPower",
+      "sku": "HC-1250-VP",
+      "variant": "1250W",
+      "compatibleBoards": [
+        "IS-VP-CB-V8",
+        "IS-VP-CB-V4"
+      ],
+      "heatingWattage": {
+        "circuit1": 500,
+        "circuit2": 750,
+        "circuit3": 0
+      }
+    }
+  ]
+}
