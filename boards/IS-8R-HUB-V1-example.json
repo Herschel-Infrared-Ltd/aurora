@@ -1,0 +1,202 @@
+{
+	"boardType": "IS-8R-HUB",
+	"boardVersion": "V1",
+	"module": {
+		"chip": "ESP32-C6",
+		"flash_size_mb": 8
+	},
+	"aliases": [
+		"HUB-V1.0-012025"
+	],
+  "i2c": {
+    "sda": 21,
+    "scl": 22,
+    "port": 0
+  },
+  "sensors": [
+    {
+      "id": "mlx90614",
+      "type": "mlx90614",
+      "address": 90
+    },
+    {
+      "id": "sht41",
+      "type": "sht41",
+      "address": 68
+    },
+    {
+      "id": "ld2410",
+      "type": "ld2410",
+      "uart_port": 1,
+      "tx_pin": 2,
+      "rx_pin": 3,
+      "out_pin": 23
+    }
+  ],
+  "leds": [
+    {
+      "id": "pairing_led",
+      "pin": 11,
+      "type": "status"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pairing_button",
+      "pin": 6,
+      "type": "pairing"
+    }
+  ],
+  "products": [
+		{
+			"sku": "IR-HALO-4800",
+			"variant": "4800W standard",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 1600
+				}
+			],
+      "lightingRelays": []
+		},
+		{
+			"sku": "IR-HALO-4800",
+			"variant": "4800W standard (second unit)",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 21,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_2",
+					"pin": 22,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_3",
+					"pin": 23,
+					"wattage": 1600
+				}
+			],
+      "lightingRelays": []
+		},
+		{
+			"sku": "IR-HORIZON-2600",
+			"variant": "2600W standard",
+			"name": "Horizon",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 24,
+					"wattage": 2600
+				}
+			],
+      "lightingRelays": []
+		},
+		{
+			"sku": "IR-HORIZON-2600",
+			"variant": "2600W standard (second unit)",
+			"name": "Horizon",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 25,
+					"wattage": 2600
+				}
+			],
+      "lightingRelays": []
+		},
+		{
+			"sku": "HC-850",
+			"variant": "850W Comfort",
+			"name": "Comfort",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 26,
+					"wattage": 850
+				}
+			],
+			"lightingRelays": [],
+			"sensors": [
+				{
+					"id": "mlx90614",
+					"type": "mlx90614",
+					"address": 90
+				},
+				{
+					"id": "sht41",
+					"type": "sht41",
+					"address": 68
+				}
+			],
+			"leds": [
+				{
+					"id": "pairing_led",
+					"pin": 15,
+					"type": "status"
+				}
+			],
+			"buttons": [
+				{
+					"id": "pairing_button",
+					"pin": 10,
+					"type": "pairing"
+				}
+			]
+		},
+		{
+			"sku": "HC-1200",
+			"variant": "1200W Comfort",
+			"name": "Comfort",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 27,
+					"wattage": 1200
+				}
+			],
+			"lightingRelays": [],
+			"sensors": [
+				{
+					"id": "mlx90614",
+					"type": "mlx90614",
+					"address": 90
+				},
+				{
+					"id": "sht41",
+					"type": "sht41",
+					"address": 68
+				}
+			],
+			"leds": [
+				{
+					"id": "pairing_led",
+					"pin": 16,
+					"type": "status"
+				}
+			],
+			"buttons": [
+				{
+					"id": "pairing_button",
+					"pin": 1,
+					"type": "pairing"
+				}
+			]
+		}
+	]
+}

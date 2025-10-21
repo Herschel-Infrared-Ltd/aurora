@@ -1,0 +1,171 @@
+{
+	"boardType": "IS-3R-WL",
+	"boardVersion": "V5",
+	"module": {
+		"chip": "ESP32-C6",
+		"flash_size_mb": 8
+	},
+	"aliases": [
+		"HMBL-V3.0-092025"
+	],
+	"i2c": {
+		"sda": 21,
+		"scl": 22,
+		"port": 0
+	},
+	"products": [
+		{
+			"sku": "IR-HALO-4800",
+			"variant": "4800W standard",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 1600
+				}
+			],
+			"lightingRelays": []
+		},
+		{
+			"sku": "IR-HALO-4800-L",
+			"variant": "4800W with lights",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 1600
+				}
+			],
+			"lightingRelays": [
+				{
+					"id": "lights_1",
+					"pin": 4,
+					"type": "dimmable"
+				},
+				{
+					"id": "lights_2",
+					"pin": 5,
+					"type": "rgb"
+				}
+			],
+			"sensors": [
+				{
+					"id": "mlx90614",
+					"type": "mlx90614",
+					"address": 90
+				},
+				{
+					"id": "sht41",
+					"type": "sht41",
+					"address": 68
+				},
+				{
+					"id": "ld2410",
+					"type": "ld2410",
+					"uart_port": 1,
+					"tx_pin": 2,
+					"rx_pin": 3,
+					"out_pin": 23
+				},
+				{
+					"id": "lm35_main",
+					"type": "lm35",
+					"pin": 34
+				}
+			],
+			"leds": [
+				{
+					"id": "pairing_led",
+					"pin": 11,
+					"type": "status"
+				}
+			],
+			"buttons": [
+				{
+					"id": "pairing_button",
+					"pin": 6,
+					"type": "pairing"
+				}
+			]
+		},
+		{
+			"sku": "IR-HALO-7800",
+			"variant": "7800W standard",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 2600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 2600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 2600
+				}
+			],
+			"lightingRelays": []
+		},
+		{
+			"sku": "IR-HALO-7800-L",
+			"variant": "7800W with lights",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 2600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 2600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 2600
+				}
+			],
+			"lightingRelays": [
+				{
+					"id": "lights_1",
+					"pin": 4,
+					"type": "led_strip"
+				},
+				{
+					"id": "lights_2",
+					"pin": 5,
+					"type": "led_ring"
+				}
+			]
+		}
+	]
+}

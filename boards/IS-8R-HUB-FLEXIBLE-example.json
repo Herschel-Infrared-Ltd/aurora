@@ -1,0 +1,199 @@
+{
+	"boardType": "IS-8R-HUB",
+	"boardVersion": "V1",
+	"module": {
+		"chip": "ESP32-C6",
+		"flash_size_mb": 8
+	},
+	"aliases": [
+		"HUB-V1.0-012025"
+	],
+	"i2c": {
+		"sda": 21,
+		"scl": 22,
+		"port": 0
+	},
+	"sensors": [
+		{
+			"id": "mlx90614",
+			"type": "mlx90614",
+			"address": 90
+		},
+		{
+			"id": "sht41",
+			"type": "sht41",
+			"address": 68
+		}
+	],
+	"leds": [
+		{
+			"id": "pairing_led",
+			"pin": 11,
+			"type": "status"
+		}
+	],
+	"buttons": [
+		{
+			"id": "pairing_button",
+			"pin": 6,
+			"type": "pairing"
+		}
+	],
+	"products": [
+		{
+			"sku": "IR-HALO-4800",
+			"variant": "4800W standard",
+			"name": "Halo",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 18,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_2",
+					"pin": 19,
+					"wattage": 1600
+				},
+				{
+					"id": "heater_3",
+					"pin": 20,
+					"wattage": 1600
+				}
+			],
+			"lightingRelays": [],
+			"sensors": [],
+			"leds": [],
+			"buttons": []
+		},
+		{
+			"sku": "IR-HORIZON-2600",
+			"variant": "2600W standard",
+			"name": "Horizon",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 21,
+					"wattage": 2600
+				}
+			],
+			"lightingRelays": [],
+			"sensors": [],
+			"leds": [],
+			"buttons": []
+		},
+		{
+			"sku": "SENSOR-ENV",
+			"variant": "Environmental monitoring",
+			"name": "Environment Sensor",
+			"heatingRelays": [],
+			"lightingRelays": [],
+			"sensors": [
+				{
+					"id": "lm35_main",
+					"type": "lm35",
+					"pin": 34
+				},
+				{
+					"id": "ld2410",
+					"type": "ld2410",
+					"uart_port": 1,
+					"tx_pin": 2,
+					"rx_pin": 3,
+					"out_pin": 23
+				}
+			],
+			"leds": [
+				{
+					"id": "status_led",
+					"pin": 12,
+					"type": "indicator"
+				}
+			],
+			"buttons": [
+				{
+					"id": "calibrate_button",
+					"pin": 7,
+					"type": "switch"
+				}
+			]
+		},
+		{
+			"sku": "LIGHTING-CONTROL",
+			"variant": "Smart lighting control",
+			"name": "Lighting Controller",
+			"heatingRelays": [],
+			"lightingRelays": [
+				{
+					"id": "lights_1",
+					"pin": 24,
+					"type": "dimmable"
+				},
+				{
+					"id": "lights_2",
+					"pin": 25,
+					"type": "rgb"
+				}
+			],
+			"sensors": [],
+			"leds": [
+				{
+					"id": "ambient_led",
+					"pin": 13,
+					"type": "ambient"
+				}
+			],
+			"buttons": [
+				{
+					"id": "scene_button",
+					"pin": 8,
+					"type": "switch"
+				}
+			]
+		},
+		{
+			"sku": "HC-850",
+			"variant": "850W Comfort",
+			"name": "Comfort",
+			"heatingRelays": [
+				{
+					"id": "heater_1",
+					"pin": 26,
+					"wattage": 850
+				}
+			],
+			"lightingRelays": [],
+			"sensors": [],
+			"leds": [],
+			"buttons": []
+		},
+		{
+			"sku": "MONITOR-ONLY",
+			"variant": "Monitoring station",
+			"name": "Monitor",
+			"heatingRelays": [],
+			"lightingRelays": [],
+			"sensors": [
+				{
+					"id": "lm35_remote",
+					"type": "lm35",
+					"pin": 35
+				}
+			],
+			"leds": [
+				{
+					"id": "alert_led",
+					"pin": 14,
+					"type": "indicator"
+				}
+			],
+			"buttons": [
+				{
+					"id": "test_button",
+					"pin": 9,
+					"type": "switch"
+				}
+			]
+		}
+	]
+}
