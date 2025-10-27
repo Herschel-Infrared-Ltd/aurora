@@ -365,7 +365,8 @@
       "sku": "IR-HORIZON-2600",
       "variant": "2600W standard",
       "compatibleBoards": [
-        "IS-1R-V2"
+        "IS-1R-V2",
+        "IS-1R-WS-V1"
       ],
       "heatingWattage": {
         "circuit1": 2600,
@@ -378,7 +379,8 @@
       "sku": "IR-HORIZON-2600-D",
       "variant": "2600W with decor",
       "compatibleBoards": [
-        "IS-1R-V2"
+        "IS-1R-V2",
+        "IS-1R-WS-V1"
       ],
       "heatingWattage": {
         "circuit1": 2600,
@@ -391,7 +393,8 @@
       "sku": "IR-HORIZON-3200",
       "variant": "3200W standard",
       "compatibleBoards": [
-        "IS-1R-V2"
+        "IS-1R-V2",
+        "IS-1R-WS-V1"
       ],
       "heatingWattage": {
         "circuit1": 3200,
@@ -404,7 +407,8 @@
       "sku": "IR-HORIZON-3200-D",
       "variant": "3200W with decor",
       "compatibleBoards": [
-        "IS-1R-V2"
+        "IS-1R-V2",
+        "IS-1R-WS-V1"
       ],
       "heatingWattage": {
         "circuit1": 3200,
@@ -418,6 +422,7 @@
       "variant": "215W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -433,6 +438,7 @@
       "variant": "420W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -448,6 +454,7 @@
       "variant": "600W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -463,6 +470,7 @@
       "variant": "850W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -478,6 +486,7 @@
       "variant": "850W Long",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -493,6 +502,7 @@
       "variant": "1050W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -508,6 +518,7 @@
       "variant": "1200W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
@@ -523,6 +534,7 @@
       "variant": "1250W",
       "compatibleBoards": [
         "IS-1R-V2",
+        "IS-1R-WS-V1",
         "IS-VP-CB-V8",
         "IS-VP-CB-V4"
       ],
