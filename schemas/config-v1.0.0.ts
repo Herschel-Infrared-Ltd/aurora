@@ -74,9 +74,7 @@ export const FinalConfigSchema = z.object({
   sku: z.string(),
   boardType: z.string(),
   boardVersion: z.string(), // Hardware revision (e.g., "V2", "V3", "V5")
-  batchDate: z.string(), // Manufacturing batch date (e.g., "2025-09-26")
-  provisioningKey: z.string(),
-  provisioningSecret: z.string(),
+  batchDate: z.string(), // Manufacturing batch date (e.g., "102025" for October 2025)
   module: BoardModuleSchema,
   capabilities: BoardCapabilitiesSchema,
   pinout: BoardPinoutSchema,

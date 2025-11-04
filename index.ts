@@ -86,8 +86,6 @@ interface FinalConfig {
   boardType: string;
   boardVersion: string;
   batchDate: string;
-  provisioningKey: string;
-  provisioningSecret: string;
   module: BoardModule;
   capabilities: BoardCapabilities;
   pinout: BoardPinout;
@@ -221,40 +219,37 @@ async function main() {
   );
 
   // Step 3.5: Prompt for batch date
+  const now = new Date();
+  const month = now.getMonth() + 1; // 1-12 (not zero-padded)
+  const defaultBatchDate = `${month}${now.getFullYear()}`;
+
   const batchDate = await input({
-    message: "Enter manufacturing batch date (YYYY-MM-DD):",
-    default: new Date().toISOString().split("T")[0],
+    message:
+      "Enter manufacturing batch date (MYYYY or MMyyyy, e.g., 12025 or 102025):",
+    default: defaultBatchDate,
     validate: (value) => {
-      const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
-      if (!dateRegex.test(value)) {
-        return "Please enter a valid date in YYYY-MM-DD format";
+      // Accept 5 digits (MYYYY) or 6 digits (MMyyyy)
+      const batchRegex = /^\d{5,6}$/;
+      if (!batchRegex.test(value)) {
+        return "Please enter a valid batch date in MYYYY or MMyyyy format (e.g., 12025 or 102025)";
+      }
+      // Extract month (1-2 digits) and validate
+      let monthNum: number;
+      if (value.length === 5) {
+        // Format: MYYYY (e.g., 12025)
+        monthNum = parseInt(value.substring(0, 1), 10);
+      } else {
+        // Format: MMyyyy (e.g., 102025)
+        monthNum = parseInt(value.substring(0, 2), 10);
+      }
+      if (monthNum < 1 || monthNum > 12) {
+        return "Please enter a valid month (1-12)";
       }
       return true;
     },
   });
 
   console.log(`   Batch: ${batchDate}`);
-
-  // Step 3.6: Prompt for provisioning credentials
-  const provisioningKey = await input({
-    message: "Enter provisioning key:",
-    validate: (value) => {
-      if (!value || value.trim().length === 0) {
-        return "Provisioning key cannot be empty";
-      }
-      return true;
-    },
-  });
-
-  const provisioningSecret = await input({
-    message: "Enter provisioning secret:",
-    validate: (value) => {
-      if (!value || value.trim().length === 0) {
-        return "Provisioning secret cannot be empty";
-      }
-      return true;
-    },
-  });
 
   console.log(`   Configuring sensors for deployment...\n`);
 
@@ -392,8 +387,6 @@ async function main() {
     boardType: boardConfig.boardType,
     boardVersion: boardConfig.boardVersion,
     batchDate: batchDate,
-    provisioningKey: provisioningKey,
-    provisioningSecret: provisioningSecret,
     module: boardConfig.module,
     capabilities,
     pinout: boardConfig.pinout,
@@ -428,8 +421,12 @@ async function main() {
   });
 
   if (saveToFile) {
-    const date = new Date().toISOString().split("T")[0];
-    const filename = `config-${date}.txt`;
+    // Generate ISO timestamp filename (replace colons and dots with hyphens for filesystem safety)
+    const isoString = new Date()
+      .toISOString()
+      .replace(/:/g, "-")
+      .replace(/\./g, "-");
+    const filename = `config-${isoString}.txt`;
     await Bun.write(filename, output);
     console.log(`\n💾 Saved to: ${filename}`);
   }
