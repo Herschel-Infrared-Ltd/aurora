@@ -1,10 +1,6 @@
 {
   "boardType": "IS-1R-WS",
   "boardVersion": "V1",
-  "module": {
-    "chip": "ESP32-C6",
-    "flash_size_mb": 8
-  },
   "aliases": [],
   "capabilities": {
     "has_mlx90614": true,
@@ -16,9 +12,9 @@
     "num_heating_circuits": 1,
     "num_lighting_circuits": 0,
     "has_pairing_led": true,
-    "has_sensor_led": true,
+    "has_sensor_led": false,
     "has_pairing_button": true,
-    "has_gnd_sw": true
+    "has_gnd_sw": false
   },
   "pinout": {
     "pairing_button_gpio": 6,
@@ -32,7 +28,7 @@
     "i2c_scl": 22,
     "i2c_port": 0,
     "mlx90614_addr": 90,
-    "bme688_addr": 0,
+    "bme688_addr": null,
     "sht41_addr": 68,
     "ld2410_tx": 2,
     "ld2410_rx": 3,
@@ -41,6 +37,6 @@
     "lm35_remote": null,
     "lm35_main": null,
     "pairing_led": 11,
-    "sensor_led": 10
+    "sensor_led": null
   }
 }
