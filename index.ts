@@ -402,22 +402,36 @@ async function main() {
     process.exit(1);
   }
 
-  // Output the configuration as a paste-ready serial console command
-  console.log("\n✅ Configuration generated:\n");
+  // Prompt for command format
+  const commandFormat = await select({
+    message: "\n✅ Configuration generated! Choose command format:",
+    choices: [
+      { name: "RPC command (ThingsBoard MQTT)", value: "rpc" },
+      { name: "CLI command (Serial console)", value: "cli" },
+    ],
+  });
 
   // Compact JSON (no extra whitespace)
   const jsonString = JSON.stringify(finalConfig);
 
-  // ESP console doesn't strip quotes like bash, so pass JSON unquoted
-  // The argtable3 parser will handle the string correctly
-  const output = `upload-config ${jsonString} --force`;
+  // Generate output based on selected format
+  let output: string;
+  if (commandFormat === "rpc") {
+    // RPC Debug Console Format: updateBoardConfig {<config_json>}
+    output = `updateBoardConfig ${jsonString}`;
+  } else {
+    // CLI format: upload-config <config_json>
+    // ESP console doesn't strip quotes like bash, so pass JSON unquoted
+    // The argtable3 parser will handle the string correctly
+    output = `upload-config ${jsonString}`;
+  }
 
-  console.log(output);
+  console.log(`\n${output}`);
 
   // Save to file
   const saveToFile = await confirm({
     message: "\nSave configuration to file?",
-    default: true,
+    default: false,
   });
 
   if (saveToFile) {
