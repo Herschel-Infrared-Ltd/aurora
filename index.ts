@@ -203,13 +203,19 @@ async function main() {
   )!;
 
   // Step 3: Select board configuration
-  const selectedBoard = await select({
-    message: "Select board configuration:",
-    choices: product.compatibleBoards.map((board) => ({
-      name: board,
-      value: board,
-    })),
-  });
+  // Auto-select if there's only one compatible board
+  let selectedBoard: string;
+  if (product.compatibleBoards.length === 1) {
+    selectedBoard = product.compatibleBoards[0];
+  } else {
+    selectedBoard = await select({
+      message: "Select board configuration:",
+      choices: product.compatibleBoards.map((board) => ({
+        name: board,
+        value: board,
+      })),
+    });
+  }
 
   // Load the board configuration
   const boardConfig = await loadBoardConfig(selectedBoard);
