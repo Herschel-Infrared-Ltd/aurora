@@ -1,6 +1,10 @@
 {
   "boardType": "IS-1R-WS",
   "boardVersion": "V1",
+  "module": {
+    "chip": "ESP32-C6",
+    "flash_size_mb": 8
+  },
   "aliases": [],
   "capabilities": {
     "has_mlx90614": true,
@@ -28,10 +32,10 @@
     "i2c_scl": 22,
     "i2c_port": 0,
     "mlx90614_addr": 90,
-    "bme688_addr": null,
+    "bme688_addr": 0,
     "sht41_addr": 68,
-    "ld2410_tx": 2,
-    "ld2410_rx": 3,
+    "ld2410_tx": 3,
+    "ld2410_rx": 2,
     "ld2410_out": 23,
     "ld2410_uart_port": 1,
     "lm35_remote": null,

@@ -615,7 +615,7 @@
       }
     },
     {
-      "productName": "Infrasense Controller",
+      "productName": "InfraSense Controller 1R",
       "sku": "IS-1R",
       "variant": "1 Relay",
       "compatibleBoards": [
@@ -623,7 +623,7 @@
       ]
     },
     {
-      "productName": "Infrasense Controller",
+      "productName": "InfraSense Controller 1R-WS",
       "sku": "IS-1R-WS",
       "variant": "1 Relay with Sensor",
       "compatibleBoards": [
@@ -631,7 +631,7 @@
       ]
     },
     {
-      "productName": "Infrasense Controller",
+      "productName": "InfraSense Controller 3R",
       "sku": "IS-3R",
       "variant": "3 Relay",
       "compatibleBoards": [
@@ -640,7 +640,7 @@
       ]
     },
     {
-      "productName": "Infrasense Controller",
+      "productName": "InfraSense Controller 3R-WL",
       "sku": "IS-3R-WL",
       "variant": "3 Relay with Lights",
       "compatibleBoards": [
@@ -649,7 +649,7 @@
       ]
     },
     {
-      "productName": "Infrasense Controller",
+      "productName": "InfraSense Controller RSB",
       "sku": "IS-RSB",
       "variant": "Remote Sensor Board",
       "compatibleBoards": [
